@@ -8,6 +8,37 @@ body{
 .container{
     flex: 1;
 }
+/* Base styles for desktop */
+.container {
+  width: 80%;
+  margin: auto;
+  padding: 20px;
+}
+
+/* Tablets and smaller screens */
+@media (max-width: 768px) {
+  .container {
+    width: 95%;
+    padding: 10px;
+  }
+}
+
+/* Phones */
+@media (max-width: 480px) {
+  .container {
+    width: 100%;
+    padding: 5px;
+  }
+
+  nav {
+    font-size: 14px;
+  }
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
 
 .navbar{
     height: 5rem;
